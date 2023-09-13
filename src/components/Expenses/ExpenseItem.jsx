@@ -11,15 +11,15 @@ export default function ExpenseItem({ date, title, amount }) {
         setTitles('Updated!')
     }
     return (
-
-        <Card className="expense-item">
-            <ExpenseDate date={date} />
-            <div className="expense-item__description">
-                <h2>{titles}</h2>
-                <div className="expense-item__price" >${amount}</div>
-            </div>
-            <button onClick={ClickHandler}>이름 바꾸기</button>
-        </Card>
+        <li>
+            <Card className="expense-item">
+                <ExpenseDate date={date} />
+                <div className="expense-item__description">
+                    <h2>{titles}</h2>
+                    <div className="expense-item__price" >${amount}</div>
+                </div>
+            </Card>
+        </li>
 
     );
 }
